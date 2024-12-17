@@ -1,0 +1,85 @@
+body{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background: rgb(0, 0, 0);
+}
+
+.container1{
+	display: flex;
+	width: 1440px;
+	height: 1024px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	flex-shrink: 0;
+}
+
+.poster{
+	width: 619.882px;
+	height: 958px;
+	justify-content: flex-end;
+	align-items: flex-start;
+	flex-shrink: 0;
+	background: #006CA9;
+}
+
+.header{
+	display: flex;
+	height: 440px;
+	padding: 30px 16px 0px 93px;
+	justify-content: center;
+	align-items: flex-end;
+	align-self: stretch;
+}
+
+.textgroup{
+	display: flex;
+	padding: 0px 16px;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.title{
+	color: #FFF;
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 54.698px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 98%; /* 53.604px */
+	letter-spacing: -1.641px;
+}
+
+.text{
+	display: grid;
+	grid-auto-flow: column;
+	padding: 0px 16px;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: #000;
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 8px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 92%; /* 7.36px */
+	letter-spacing: 0.08px;
+}
+
+.colums{
+	display: grid;
+	grid-auto-flow: column;
+	padding: 0px 16px;
+	justify-content: space-between;
+	align-items: flex-start;
+	color: #000;
+	font-family: "Neue Haas Grotesk Display Pro";
+	font-size: 8px;
+	font-style: normal;
+	font-weight: 450;
+	line-height: 92%; /* 7.36px */
+	letter-spacing: 0.08px;
+}
+
+.

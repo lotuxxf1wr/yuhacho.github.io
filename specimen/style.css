@@ -1,0 +1,173 @@
+@font-face{
+	font-family: 'AvantGardeSerif';
+	src: url('AvantGardeSerif.woff2') format('woff2');
+	font-weight: 400;
+}
+
+@font-face{
+  font-family: 'KMR';
+  src: url('KMRMelangeGrotesk-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABCMarist';
+  src: url('ABCMarist-Regular-Trial.woff') format(woff);
+}
+
+@font-face {
+  font-family: 'ABCMart_Italic';
+  src: url('ABCMarist-RegularItalic-Trial.woff') format(woff);
+}
+
+body{
+	/* this is the outermost element on your page*/
+  box-sizing: border-box; /* 모든 요소에서 보더와 패딩을 포함하여 크기를 계산 */
+  width: 100%; /* 가로 크기를 브라우저에 맞게 조정 */
+	overflow: hidden;
+	line-height: 1.25;
+	letter-spacing: .015em;
+	word-spacing: .001em;
+	background: #eae8e2;
+	font-family: 'AvantGardeSerif';
+	font-size: 30px;
+	color: #6DDBE4;
+}
+
+/* Dark Mode 스타일 */
+body.dark-mode {
+  background-color: #211e1e;
+  color: #cfcfcf;
+}
+
+body.dark-mode .button-deco {
+  background-color: transparent;
+  color: #cfcfcf;
+}
+
+body.dark-mode .navigation {
+  color: #cfcfcf; /* 다크 모드 텍스트 색상 */
+}
+
+body.dark-mode .big {
+  color: #cfcfcf;
+}
+
+.big{
+  padding-top: 105px;
+  text-align: center;
+  position: relative;
+	font-family: 'AvantGardeSerif';
+	font-size: 510px;
+	color: #000000;
+  z-index: 200; /* 텍스트를 더 위에 위치 */
+}
+
+a {
+  color: inherit; /* 부모 요소의 텍스트 색상 사용 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+  position: fixed;
+  padding: 0 20px;
+  font-family: 'KMR';
+  font-size: 15px;
+  color: #000000;
+  z-index: 500; /* 텍스트를 더 위에 위치 */
+}
+
+.button-deco{ 
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-family: 'KMR';
+  font-size: 15px;
+  color: #000;
+}
+
+
+.text-effect:hover{
+  font-family: 'ABCMarist';
+  font-size: 16px;
+}
+
+.sufferig_message{
+	font-size: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+    .container {
+      position: relative;
+      width: 100vw;
+      height: 40vh;
+    }
+
+    .floating-image {
+      position: absolute;
+      width: 400px;
+      animation: float 10s infinite ease-in-out; /* 애니메이션 설정 */
+    }
+
+    .floating-image:nth-child(1) { top: 10%; left: 15%; animation-delay: 0s; }
+    .floating-image:nth-child(2) { top: 20%; left: 70%; animation-delay: 1s; }
+    .floating-image:nth-child(3) { top: 50%; left: 30%; animation-delay: 0s; }
+    .floating-image:nth-child(4) { top: 70%; left: 60%; animation-delay: 1s; }
+    .floating-image:nth-child(5) { top: 80%; left: 10%; animation-delay: 2s; }
+    .floating-image:nth-child(6) { top: 15%; left: 80%; animation-delay: 1s; }
+    .floating-image:nth-child(7) { top: 30%; left: 40%; animation-delay: 0s; }
+    .floating-image:nth-child(8) { top: 65%; left: 25%; animation-delay: 3s; }
+    .floating-image:nth-child(9) { top: 75%; left: 50%; animation-delay: 1s; }
+
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+      }
+      25% {
+        transform: translate(30px, -20px);
+      }
+      50% {
+        transform: translate(-20px, 30px);
+      }
+      75% {
+        transform: translate(20px, 20px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row; /* 수평 배치 */
+    gap: 20px; /* 열 사이 간격 */
+    justify-content: space-between; /* 열 간격 균등 분배 */
+    align-items: flex-start; /* 열의 상단 정렬 */
+    padding: 0 40px; /* 양쪽 여백 */
+    max-width: 600px; /* 최대 너비 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+.column {
+  margin: 40px;
+    max-width: 600px; /* 최대 너비 */
+    flex: 1; /* 각 열을 동일한 너비로 배분 */
+    line-height: 1.5; /* 줄 간격 */
+    text-align: justify; /* 텍스트 정렬 */
+    font-family: 'KMR';
+    font-size: 13px;
+    text-align: left;
+    color: #000;
+}
+
+
+

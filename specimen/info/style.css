@@ -1,0 +1,121 @@
+@font-face{
+	font-family: 'AvantGardeSerif';
+	src: url('AvantGardeSerif.woff2') format('woff2');
+	font-weight: 400;
+}
+
+@font-face{
+  font-family: 'KMR';
+  src: url('KMRMelangeGrotesk-Book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'ABCMarist';
+  src: url('ABCMarist-Regular-Trial.woff') format(woff);
+}
+
+@font-face {
+  font-family: 'ABCMart_Italic';
+  src: url('ABCMarist-RegularItalic-Trial.woff') format(woff);
+}
+
+body{
+	/* this is the outermost element on your page*/
+  box-sizing: border-box; /* 모든 요소에서 보더와 패딩을 포함하여 크기를 계산 */
+  width: 100%; /* 가로 크기를 브라우저에 맞게 조정 */
+	overflow: auto;
+	line-height: 1.25;
+	letter-spacing: .015em;
+	word-spacing: .001em;
+	background: #eae8e2;
+	font-family: 'AvantGardeSerif';
+	font-size: 30px;
+	color: #6DDBE4;
+}
+
+/* Dark Mode 스타일 */
+body.dark-mode {
+  background-color: #211e1e;
+  color: #cfcfcf;
+}
+
+body.dark-mode .button-deco {
+  background-color: transparent;
+  color: #cfcfcf;
+}
+
+body.dark-mode .navigation {
+  color: #cfcfcf; /* 다크 모드 텍스트 색상 */
+}
+
+body.dark-mode h1 {
+  color: #cfcfcf;
+}
+
+body.dark-mode .speci {
+  color: #cfcfcf;
+}
+
+body.dark-mode .information {
+  color: #cfcfcf;
+}
+
+a {
+    color: inherit; /* 부모 요소의 텍스트 색상 사용 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    position: fixed;
+    padding: 0 20px;
+    font-family: 'KMR';
+    font-size: 15px;
+    color: #000000;
+    z-index: 500; /* 텍스트를 더 위에 위치 */
+}
+  
+.button-deco{ 
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-family: 'KMR';
+    font-size: 15px;
+    color: #000;
+}
+  
+  
+.text-effect:hover{
+    font-family: 'ABCMarist';
+    font-size: 16px;
+}
+
+.information {
+  color: #000;
+  font-family: "KMR";
+  font-size: 15px;
+  display: flex;
+  width: 708px;
+  height: 857px;
+  padding: 0px 36%;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.speci {
+  font-size: 300px;
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 { 
+  font-size: 20px;
+  color: black;
+  justify-content: center;
+  text-align: center;
+}
