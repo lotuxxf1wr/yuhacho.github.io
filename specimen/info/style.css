@@ -69,7 +69,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 97%;
     position: fixed;
     padding: 0 20px;
     font-family: 'KMR';
@@ -100,14 +100,17 @@ a {
   display: flex;
   width: 708px;
   height: 857px;
-  padding: 0px 36%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 27%;
+  padding-right: 30%;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
 
 .speci {
-  font-size: 300px;
+  font-size: 180px;
   color: black;
   justify-content: center;
   text-align: center;

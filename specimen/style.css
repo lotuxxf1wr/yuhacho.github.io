@@ -57,7 +57,7 @@ body.dark-mode .big {
   text-align: center;
   position: relative;
 	font-family: 'AvantGardeSerif';
-	font-size: 510px;
+	font-size: 343px;
 	color: #000000;
   z-index: 200; /* 텍스트를 더 위에 위치 */
 }
@@ -71,7 +71,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 98%;
+  width: 97%;
   position: fixed;
   padding: 0 20px;
   font-family: 'KMR';
@@ -106,13 +106,13 @@ a {
 
     .container {
       position: relative;
-      width: 100vw;
+      width: 85vw;
       height: 40vh;
     }
 
     .floating-image {
       position: absolute;
-      width: 400px;
+      width: 350px;
       animation: float 10s infinite ease-in-out; /* 애니메이션 설정 */
     }
 
